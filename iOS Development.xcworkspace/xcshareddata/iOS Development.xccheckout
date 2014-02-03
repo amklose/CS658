@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>24788351-559F-4704-8739-9FCB0F8AA710</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iOS Development</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>113965CB-EC39-4718-A3A4-F84DAD62D5B1</key>
+		<string>ssh://github.com/amklose/iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS Development.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>113965CB-EC39-4718-A3A4-F84DAD62D5B1</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/amklose/iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>113965CB-EC39-4718-A3A4-F84DAD62D5B1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>113965CB-EC39-4718-A3A4-F84DAD62D5B1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CS658</string>
+		</dict>
+	</array>
+</dict>
+</plist>
