@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BlankFiller.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        BlankFiller* bf = [[BlankFiller alloc] init];
         
     }
     return 0;

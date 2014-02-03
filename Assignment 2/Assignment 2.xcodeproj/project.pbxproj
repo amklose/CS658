@@ -10,6 +10,10 @@
 		4B4CF542189F573400EC8D18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4CF541189F573400EC8D18 /* Foundation.framework */; };
 		4B4CF545189F573400EC8D18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CF544189F573400EC8D18 /* main.m */; };
 		4B4CF549189F573400EC8D18 /* Assignment_2.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B4CF548189F573400EC8D18 /* Assignment_2.1 */; };
+		4B4CF55D189F6FC200EC8D18 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CF55C189F6FC200EC8D18 /* Word.m */; };
+		4B4CF560189F738B00EC8D18 /* BlankFiller.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CF55F189F738B00EC8D18 /* BlankFiller.m */; };
+		4B4CF563189F763300EC8D18 /* WordTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CF562189F763300EC8D18 /* WordTemplate.m */; };
+		4B4CF566189F7E3E00EC8D18 /* wordList.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B4CF55A189F6F9500EC8D18 /* wordList.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +27,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		4B4CF565189F7E3200EC8D18 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				4B4CF566189F7E3E00EC8D18 /* wordList.txt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +45,13 @@
 		4B4CF544189F573400EC8D18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4B4CF547189F573400EC8D18 /* Assignment 2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assignment 2-Prefix.pch"; sourceTree = "<group>"; };
 		4B4CF548189F573400EC8D18 /* Assignment_2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Assignment_2.1; sourceTree = "<group>"; };
+		4B4CF55A189F6F9500EC8D18 /* wordList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordList.txt; sourceTree = "<group>"; };
+		4B4CF55B189F6FC200EC8D18 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		4B4CF55C189F6FC200EC8D18 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
+		4B4CF55E189F738B00EC8D18 /* BlankFiller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlankFiller.h; sourceTree = "<group>"; };
+		4B4CF55F189F738B00EC8D18 /* BlankFiller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlankFiller.m; sourceTree = "<group>"; };
+		4B4CF561189F763300EC8D18 /* WordTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordTemplate.h; sourceTree = "<group>"; };
+		4B4CF562189F763300EC8D18 /* WordTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordTemplate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +94,15 @@
 		4B4CF543189F573400EC8D18 /* Assignment 2 */ = {
 			isa = PBXGroup;
 			children = (
+				4B4CF564189F7DF000EC8D18 /* Resources */,
 				4B4CF544189F573400EC8D18 /* main.m */,
 				4B4CF548189F573400EC8D18 /* Assignment_2.1 */,
+				4B4CF55B189F6FC200EC8D18 /* Word.h */,
+				4B4CF55C189F6FC200EC8D18 /* Word.m */,
+				4B4CF55E189F738B00EC8D18 /* BlankFiller.h */,
+				4B4CF55F189F738B00EC8D18 /* BlankFiller.m */,
+				4B4CF561189F763300EC8D18 /* WordTemplate.h */,
+				4B4CF562189F763300EC8D18 /* WordTemplate.m */,
 				4B4CF546189F573400EC8D18 /* Supporting Files */,
 			);
 			path = "Assignment 2";
@@ -88,6 +116,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4B4CF564189F7DF000EC8D18 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B4CF55A189F6F9500EC8D18 /* wordList.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,6 +134,7 @@
 				4B4CF53A189F573400EC8D18 /* Sources */,
 				4B4CF53B189F573400EC8D18 /* Frameworks */,
 				4B4CF53C189F573400EC8D18 /* CopyFiles */,
+				4B4CF565189F7E3200EC8D18 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -139,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B4CF560189F738B00EC8D18 /* BlankFiller.m in Sources */,
+				4B4CF563189F763300EC8D18 /* WordTemplate.m in Sources */,
 				4B4CF545189F573400EC8D18 /* main.m in Sources */,
+				4B4CF55D189F6FC200EC8D18 /* Word.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +291,7 @@
 				4B4CF54E189F573400EC8D18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
