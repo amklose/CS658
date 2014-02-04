@@ -7,13 +7,15 @@
 //
 
 #import "BlankFiller.h"
+#import "WordTemplate.h"
 
 @implementation BlankFiller
 
+// Designated initializer
 -(id)init
 {
     self = [super init];
-    if(self) {
+    if (self) {
         _nouns = [[NSMutableArray alloc]init];
         _verbs = [[NSMutableArray alloc]init];
         _adjectives = [[NSMutableArray alloc]init];
@@ -32,7 +34,7 @@
     NSError* error;
     NSString* fileContents = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
     
-     if(error) {
+     if (error) {
          NSLog(@"%@", [error localizedFailureReason]);
          return;
      }
@@ -80,6 +82,27 @@
     } else {
         return nil;
     }
+}
+
+-(NSString*)generate
+{
+    if ([_templates count] == 0) {
+        return @"No templates found.";
+    }
+    
+    WordTemplate* chosenTemplate = [[WordTemplate alloc]initWithTemplate:[_templates objectAtIndex:arc4random_uniform((int)[_templates count])]];
+    PartOfSpeech nextBlankType = [chosenTemplate getNextBlankType];
+    Word* word;
+    
+    while (nextBlankType != UNKNOWN) {
+        word = [self getWordWithPartOfSpeech:nextBlankType];
+        if (word) {
+            [chosenTemplate replaceNextBlankWithWord:word];
+        }
+        nextBlankType = [chosenTemplate getNextBlankType];
+    }
+    
+    return [chosenTemplate filledTemplate];
 }
 
 @end

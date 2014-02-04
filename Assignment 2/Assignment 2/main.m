@@ -7,14 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BlankFiller.h"
+#import "BurnGenerator.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
-        BlankFiller* bf = [[BlankFiller alloc] init];
+        // BlankFiller* bf = [[BlankFiller alloc] init];
+        BurnGenerator* bg = [[BurnGenerator alloc] init];
+        NSLog(@"%@\n", [bg generate]);
         
     }
     return 0;

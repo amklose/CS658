@@ -14,6 +14,9 @@
 		4B4CF560189F738B00EC8D18 /* BlankFiller.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CF55F189F738B00EC8D18 /* BlankFiller.m */; };
 		4B4CF563189F763300EC8D18 /* WordTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CF562189F763300EC8D18 /* WordTemplate.m */; };
 		4B4CF566189F7E3E00EC8D18 /* wordList.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B4CF55A189F6F9500EC8D18 /* wordList.txt */; };
+		E91D08DA18A1A92D00D10EBC /* BurnGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E91D08D918A1A92D00D10EBC /* BurnGenerator.m */; };
+		E91D08DD18A1AAA900D10EBC /* burnTemplateList.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = E91D08DB18A1AA8B00D10EBC /* burnTemplateList.txt */; };
+		E91D08DE18A1AAA900D10EBC /* madLibTemplateList.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = E91D08DC18A1AA8B00D10EBC /* madLibTemplateList.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +36,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				E91D08DD18A1AAA900D10EBC /* burnTemplateList.txt in CopyFiles */,
+				E91D08DE18A1AAA900D10EBC /* madLibTemplateList.txt in CopyFiles */,
 				4B4CF566189F7E3E00EC8D18 /* wordList.txt in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +57,10 @@
 		4B4CF55F189F738B00EC8D18 /* BlankFiller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlankFiller.m; sourceTree = "<group>"; };
 		4B4CF561189F763300EC8D18 /* WordTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordTemplate.h; sourceTree = "<group>"; };
 		4B4CF562189F763300EC8D18 /* WordTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordTemplate.m; sourceTree = "<group>"; };
+		E91D08D818A1A92D00D10EBC /* BurnGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurnGenerator.h; sourceTree = "<group>"; };
+		E91D08D918A1A92D00D10EBC /* BurnGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BurnGenerator.m; sourceTree = "<group>"; };
+		E91D08DB18A1AA8B00D10EBC /* burnTemplateList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = burnTemplateList.txt; sourceTree = "<group>"; };
+		E91D08DC18A1AA8B00D10EBC /* madLibTemplateList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madLibTemplateList.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +112,8 @@
 				4B4CF55F189F738B00EC8D18 /* BlankFiller.m */,
 				4B4CF561189F763300EC8D18 /* WordTemplate.h */,
 				4B4CF562189F763300EC8D18 /* WordTemplate.m */,
+				E91D08D818A1A92D00D10EBC /* BurnGenerator.h */,
+				E91D08D918A1A92D00D10EBC /* BurnGenerator.m */,
 				4B4CF546189F573400EC8D18 /* Supporting Files */,
 			);
 			path = "Assignment 2";
@@ -119,6 +130,8 @@
 		4B4CF564189F7DF000EC8D18 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E91D08DB18A1AA8B00D10EBC /* burnTemplateList.txt */,
+				E91D08DC18A1AA8B00D10EBC /* madLibTemplateList.txt */,
 				4B4CF55A189F6F9500EC8D18 /* wordList.txt */,
 			);
 			name = Resources;
@@ -180,6 +193,7 @@
 				4B4CF563189F763300EC8D18 /* WordTemplate.m in Sources */,
 				4B4CF545189F573400EC8D18 /* main.m in Sources */,
 				4B4CF55D189F6FC200EC8D18 /* Word.m in Sources */,
+				E91D08DA18A1A92D00D10EBC /* BurnGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,5 +22,6 @@
 -(void)readWords;
 -(void)addWord:(Word*)word;
 -(Word*)getWordWithPartOfSpeech:(PartOfSpeech)partOfSpeech;
+-(NSString*)generate;
 
 @end
