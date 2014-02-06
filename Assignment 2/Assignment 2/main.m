@@ -14,8 +14,9 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        // BlankFiller* bf = [[BlankFiller alloc] init];
         BurnGenerator* bg = [[BurnGenerator alloc] init];
+        MadLibGenerator* mlg = [[MadLibGenerator alloc] init];
+        
         NSLog(@"%@\n", [bg generate]);
         
     }

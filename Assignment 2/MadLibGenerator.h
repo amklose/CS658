@@ -10,4 +10,7 @@
 
 @interface MadLibGenerator : BlankFiller
 
+-(id)init;
+
+
 @end
