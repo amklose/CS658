@@ -34,10 +34,10 @@
     }
     
     NSArray* fileLines = [fileContents componentsSeparatedByString:@"\n\n"];
-    WordTemplate* template = [WordTemplate alloc];
+    
     
     for (NSString* fileLine in fileLines) {
-        template = [template initWithTemplate:fileLine];
+        WordTemplate* template = [[WordTemplate alloc] initWithTemplate:fileLine];
         [[super templates]addObject:template];
     }
 }

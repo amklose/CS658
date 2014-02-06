@@ -17,7 +17,6 @@
     self = [super init];
     if (self) {
         [self readBurnTemplates];
-        // NSLog(@"%@\n", [self generate]);
     }
     
     return self;
@@ -35,10 +34,9 @@
     }
     
     NSArray* fileLines = [fileContents componentsSeparatedByString:@"\n"];
-    WordTemplate* template = [WordTemplate alloc];
     
     for (NSString* fileLine in fileLines) {
-        template = [template initWithTemplate:fileLine];
+        WordTemplate* template = [[WordTemplate alloc] initWithTemplate:fileLine];
         [[super templates]addObject:template];
     }
 }

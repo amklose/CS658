@@ -23,7 +23,7 @@
 -(id)initWithTemplate:(NSString*)template
 {
     self = [super init];
-    if(self) {
+    if (self) {
         _template = template;
         _filledTemplate = [NSMutableString stringWithString:_template];
     }
@@ -33,7 +33,7 @@
 -(PartOfSpeech)getNextBlankType
 {
     NSRange start = [_filledTemplate rangeOfString:@"<"];
-    if(start.length != 0) {
+    if (start.length != 0) {
         NSRange end = [_filledTemplate rangeOfString:@">"];
         _nextBlankRange = NSMakeRange(start.location, end.location - start.location + 1);
         NSRange blankTypeRange = NSMakeRange(_nextBlankRange.location + 1, _nextBlankRange.length - 2);

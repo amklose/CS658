@@ -90,10 +90,13 @@
         return @"No templates found.";
     }
     
-    WordTemplate* chosenTemplate = [_templates objectAtIndex:arc4random_uniform((int)[_templates count])];
-    PartOfSpeech nextBlankType = [chosenTemplate getNextBlankType];
+    WordTemplate* chosenTemplate;
+    PartOfSpeech nextBlankType;
     Word* word;
+    NSString* returnString;
     
+    chosenTemplate = [_templates objectAtIndex:arc4random_uniform((int)[_templates count])];
+    nextBlankType  = [chosenTemplate getNextBlankType];
     while (nextBlankType != UNKNOWN) {
         word = [self getWordWithPartOfSpeech:nextBlankType];
         if (word) {
@@ -101,8 +104,10 @@
         }
         nextBlankType = [chosenTemplate getNextBlankType];
     }
+    returnString = [chosenTemplate filledTemplate];
+    [chosenTemplate clearFilledTemplate];
     
-    return [chosenTemplate filledTemplate];
+    return returnString;
 }
 
 @end

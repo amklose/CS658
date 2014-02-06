@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BurnGenerator.h"
+#import "MadLibGenerator.h"
 
 int main(int argc, const char * argv[])
 {
@@ -17,8 +18,13 @@ int main(int argc, const char * argv[])
         BurnGenerator* bg = [[BurnGenerator alloc] init];
         MadLibGenerator* mlg = [[MadLibGenerator alloc] init];
         
-        NSLog(@"%@\n", [bg generate]);
-        
+        for (int i=0; i<3; ++i) {
+            NSLog(@"%@\n\n", [bg generate]);
+        }
+
+        for (int i=0; i<3; ++i) {
+            NSLog(@"%@\n\n", [mlg generate]);
+        }
     }
     return 0;
 }
