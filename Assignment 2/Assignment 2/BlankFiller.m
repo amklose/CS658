@@ -90,7 +90,7 @@
         return @"No templates found.";
     }
     
-    WordTemplate* chosenTemplate = [[WordTemplate alloc]initWithTemplate:[_templates objectAtIndex:arc4random_uniform((int)[_templates count])]];
+    WordTemplate* chosenTemplate = [_templates objectAtIndex:arc4random_uniform((int)[_templates count])];
     PartOfSpeech nextBlankType = [chosenTemplate getNextBlankType];
     Word* word;
     

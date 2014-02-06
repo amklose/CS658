@@ -47,7 +47,7 @@
 
 -(void)replaceNextBlankWithWord:(Word*)word
 {
-    [_filledTemplate replaceCharactersInRange:_nextBlankRange withString:[word word]];
+    [_filledTemplate replaceCharactersInRange:_nextBlankRange withString:[word description]];
 }
 
 -(void)clearFilledTemplate

@@ -17,7 +17,7 @@
     self = [super init];
     if (self) {
         [self readBurnTemplates];
-        NSLog(@"%@\n", [self generate]);
+        // NSLog(@"%@\n", [self generate]);
     }
     
     return self;
@@ -39,7 +39,7 @@
     
     for (NSString* fileLine in fileLines) {
         template = [template initWithTemplate:fileLine];
-        [[super templates] addObject:template];
+        [[super templates]addObject:template];
     }
 }
 
