@@ -29,7 +29,8 @@
     NSString* fileContents = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
     
     if (error) {
-        NSLog(@"%@", [error localizedFailureReason]);
+        NSLog(@"%@\n\n", [error localizedFailureReason]);
+        
         return;
     }
     

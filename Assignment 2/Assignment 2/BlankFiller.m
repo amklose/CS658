@@ -36,6 +36,7 @@
     
      if (error) {
          NSLog(@"%@", [error localizedFailureReason]);
+         
          return;
      }
     
@@ -86,6 +87,7 @@
 
 -(NSString*)generate
 {
+    // Fail fast
     if ([_templates count] == 0) {
         return @"No templates found.";
     }

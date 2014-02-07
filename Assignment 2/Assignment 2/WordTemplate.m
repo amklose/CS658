@@ -27,6 +27,7 @@
         _template = template;
         _filledTemplate = [NSMutableString stringWithString:_template];
     }
+    
     return self;
 }
 
@@ -41,6 +42,7 @@
         
         return [Word convertStringToPartOfSpeech:blank];
     } else {
+        
         return UNKNOWN;
     }
 }

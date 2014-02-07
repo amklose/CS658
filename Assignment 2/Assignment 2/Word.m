@@ -23,6 +23,7 @@
         _word = word;
         _partOfSpeech = partOfSpeech;
     }
+    
     return self;
 }
 

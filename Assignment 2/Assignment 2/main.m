@@ -21,11 +21,11 @@ int main(int argc, const char * argv[])
         for (int i=0; i<3; ++i) {
             NSLog(@"%@\n\n", [bg generate]);
         }
-
         for (int i=0; i<3; ++i) {
             NSLog(@"%@\n\n", [mlg generate]);
         }
     }
+    
     return 0;
 }
 
