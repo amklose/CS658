@@ -1,18 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HzB-3U-yu3"/>
+                        <viewControllerLayoutGuide type="bottom" id="lac-Sy-aEH"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Il4-Pp-1Pk">
+                                <rect key="frame" x="20" y="273" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACK-XS-7NR">
+                                <rect key="frame" x="20" y="302" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Answer">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Tac-jO-5G5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Il4-Pp-1Pk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="D0A-IS-pl7"/>
+                            <constraint firstItem="ACK-XS-7NR" firstAttribute="top" secondItem="Il4-Pp-1Pk" secondAttribute="bottom" constant="8" id="DAF-JK-ZwQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Il4-Pp-1Pk" secondAttribute="trailing" constant="20" id="Dvu-lW-M7o"/>
+                            <constraint firstAttribute="trailing" secondItem="ACK-XS-7NR" secondAttribute="trailing" constant="20" id="UOD-Nz-Esi"/>
+                            <constraint firstAttribute="centerY" secondItem="Il4-Pp-1Pk" secondAttribute="centerY" constant="0.5" id="e0M-dT-Mtr"/>
+                            <constraint firstItem="ACK-XS-7NR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="jng-mf-OCi"/>
+                            <constraint firstAttribute="centerX" secondItem="ACK-XS-7NR" secondAttribute="centerX" id="wqD-5u-WSd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="ACK-XS-7NR" id="Dgr-T7-WPF"/>
+                        <outlet property="label" destination="Il4-Pp-1Pk" id="mel-Y3-bFH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
