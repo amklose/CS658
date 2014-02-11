@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gR7-WN-KKe"/>
+                        <viewControllerLayoutGuide type="bottom" id="XjI-N1-YhV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yG8-df-X3U">
+                                <rect key="frame" x="20" y="37" width="280" height="447"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pe8-dc-Vvy">
+                                <rect key="frame" x="20" y="518" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Generate New MadLib">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DcG-1F-Mfv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnH-B4-lnj">
+                                <rect key="frame" x="20" y="480" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Generate New Burn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BAW-Gy-fUS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XjI-N1-YhV" firstAttribute="top" secondItem="pe8-dc-Vvy" secondAttribute="bottom" constant="20" id="356-ue-Qfl"/>
+                            <constraint firstItem="XnH-B4-lnj" firstAttribute="top" secondItem="yG8-df-X3U" secondAttribute="bottom" constant="8" id="9sd-fY-kKk"/>
+                            <constraint firstItem="yG8-df-X3U" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="H2D-Ja-w4I"/>
+                            <constraint firstItem="XnH-B4-lnj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="U1w-jJ-XfV"/>
+                            <constraint firstItem="pe8-dc-Vvy" firstAttribute="top" secondItem="XnH-B4-lnj" secondAttribute="bottom" constant="8" id="czq-RS-PFc"/>
+                            <constraint firstAttribute="trailing" secondItem="pe8-dc-Vvy" secondAttribute="trailing" constant="20" id="epi-mB-0bK"/>
+                            <constraint firstAttribute="trailing" secondItem="XnH-B4-lnj" secondAttribute="trailing" constant="20" id="geG-cY-031"/>
+                            <constraint firstAttribute="trailing" secondItem="yG8-df-X3U" secondAttribute="trailing" constant="20" id="pYW-KU-2xF"/>
+                            <constraint firstItem="pe8-dc-Vvy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="qK1-s6-WCo"/>
+                            <constraint firstItem="yG8-df-X3U" firstAttribute="top" secondItem="gR7-WN-KKe" secondAttribute="bottom" constant="25" id="qeN-9X-BYW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="burnButton" destination="XnH-B4-lnj" id="GW6-q1-WYt"/>
+                        <outlet property="madLibButton" destination="pe8-dc-Vvy" id="dnV-Yh-bdP"/>
+                        <outlet property="textView" destination="yG8-df-X3U" id="RBH-V6-Tum"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

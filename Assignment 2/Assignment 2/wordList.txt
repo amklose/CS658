@@ -60,4 +60,4 @@ thoroughly:adverb
 surreptitiously:adverb
 clandestine:adjective
 gargantuan:adjective
-tiny:adjective0
+tiny:adjective
