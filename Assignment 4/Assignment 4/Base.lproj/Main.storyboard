@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="c9X-hj-8QG">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="c9X-hj-8QG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <connections>
@@ -26,10 +26,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="c9X-hj-8QG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6wl-Cc-2h5"/>
-                            <constraint firstItem="wDA-Aa-eVg" firstAttribute="top" secondItem="c9X-hj-8QG" secondAttribute="bottom" constant="-548" id="OwT-RM-xVZ"/>
-                            <constraint firstItem="geg-Au-gXd" firstAttribute="top" secondItem="c9X-hj-8QG" secondAttribute="bottom" id="QLD-bp-3BG"/>
-                            <constraint firstAttribute="trailing" secondItem="c9X-hj-8QG" secondAttribute="trailing" id="XgJ-pE-NXO"/>
+                            <constraint firstAttribute="trailing" secondItem="c9X-hj-8QG" secondAttribute="trailing" id="K57-Jw-aWE"/>
+                            <constraint firstItem="c9X-hj-8QG" firstAttribute="top" secondItem="wDA-Aa-eVg" secondAttribute="bottom" constant="-20" id="MtO-XR-8PV"/>
+                            <constraint firstAttribute="bottom" secondItem="c9X-hj-8QG" secondAttribute="bottom" id="WRP-au-SdZ"/>
+                            <constraint firstItem="c9X-hj-8QG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="mZk-E4-ArB"/>
                         </constraints>
                     </view>
                     <connections>
