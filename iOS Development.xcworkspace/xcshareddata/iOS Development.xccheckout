@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>24788351-559F-4704-8739-9FCB0F8AA710</string>
+	<string>FC2C07EC-1F0E-442C-BB1C-2847A51DA164</string>
 	<key>IDESourceControlProjectName</key>
 	<string>iOS Development</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>113965CB-EC39-4718-A3A4-F84DAD62D5B1</key>
-		<string>ssh://github.com/amklose/iOS.git</string>
+		<key>7D53E519-518E-4E63-B958-AC17A38159BC</key>
+		<string>https://github.com/amklose/CS658.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>iOS Development.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>113965CB-EC39-4718-A3A4-F84DAD62D5B1</key>
+		<key>7D53E519-518E-4E63-B958-AC17A38159BC</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/amklose/iOS.git</string>
+	<string>https://github.com/amklose/CS658.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>113965CB-EC39-4718-A3A4-F84DAD62D5B1</string>
+	<string>7D53E519-518E-4E63-B958-AC17A38159BC</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>113965CB-EC39-4718-A3A4-F84DAD62D5B1</string>
+			<string>7D53E519-518E-4E63-B958-AC17A38159BC</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CS658</string>
 		</dict>

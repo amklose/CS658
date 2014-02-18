@@ -23,6 +23,7 @@
 		4BFAAC4C18B1D2E4000A4BE0 /* Assignment_4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFAAC4B18B1D2E4000A4BE0 /* Assignment_4Tests.m */; };
 		4BFAAC5618B1D3C0000A4BE0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFAAC5518B1D3C0000A4BE0 /* MapKit.framework */; };
 		4BFAAC5818B1DC2A000A4BE0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFAAC5718B1DC2A000A4BE0 /* CoreLocation.framework */; };
+		E950AF7618B41E9100D3B4AA /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E950AF7518B41E9100D3B4AA /* MapAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		4BFAAC4B18B1D2E4000A4BE0 /* Assignment_4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment_4Tests.m; sourceTree = "<group>"; };
 		4BFAAC5518B1D3C0000A4BE0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4BFAAC5718B1DC2A000A4BE0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E950AF7418B41E9100D3B4AA /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		E950AF7518B41E9100D3B4AA /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				4BFAAC3618B1D2E4000A4BE0 /* ViewController.m */,
 				4BFAAC3818B1D2E4000A4BE0 /* Images.xcassets */,
 				4BFAAC2718B1D2E4000A4BE0 /* Supporting Files */,
+				E950AF7418B41E9100D3B4AA /* MapAnnotation.h */,
+				E950AF7518B41E9100D3B4AA /* MapAnnotation.m */,
 			);
 			path = "Assignment 4";
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 				4BFAAC3718B1D2E4000A4BE0 /* ViewController.m in Sources */,
 				4BFAAC3118B1D2E4000A4BE0 /* AppDelegate.m in Sources */,
 				4BFAAC2D18B1D2E4000A4BE0 /* main.m in Sources */,
+				E950AF7618B41E9100D3B4AA /* MapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +474,7 @@
 				4BFAAC5118B1D2E4000A4BE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BFAAC5218B1D2E4000A4BE0 /* Build configuration list for PBXNativeTarget "Assignment 4Tests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +483,7 @@
 				4BFAAC5418B1D2E4000A4BE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

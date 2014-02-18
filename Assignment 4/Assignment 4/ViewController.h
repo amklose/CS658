@@ -12,7 +12,11 @@
 
 @interface ViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
+@property(nonatomic, weak) IBOutlet UISegmentedControl* segmentedControl;
 @property(nonatomic, weak) IBOutlet MKMapView* mapView;
+@property(nonatomic, weak) IBOutlet UILabel* locationLabel;
+@property(nonatomic, weak) IBOutlet UIButton* markItButton;
 @property(nonatomic, strong) CLLocationManager* locationManager;
+@property(nonatomic, strong) CLGeocoder* geocoder;
 
 @end
