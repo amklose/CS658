@@ -12,6 +12,7 @@
 
 @interface ViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
+// Public properties
 @property(nonatomic, weak) IBOutlet UISegmentedControl* segmentedControl;
 @property(nonatomic, weak) IBOutlet MKMapView* mapView;
 @property(nonatomic, weak) IBOutlet UILabel* locationLabel;

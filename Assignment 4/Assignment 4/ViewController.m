@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 
+// Private properties
 @property(nonatomic, strong) CLPlacemark* placemark;
 @property(nonatomic, strong) CLLocation* location;
 
@@ -43,47 +44,35 @@
     [self.mapView setUserTrackingMode:MKUserTrackingModeFollowWithHeading animated:YES];
 }
 
--(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
-{
-    _locationLabel.text = userLocation.location.description;
-}
-
 // CLLocationManagerDelegate
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     _location = [locations lastObject];
     NSLog(@"Location: %@", _location);
+    [_geocoder reverseGeocodeLocation:_location completionHandler:^(NSArray *placemarks, NSError *error) {
+        if (error == nil && [placemarks count] > 0) {
+            _placemark = [placemarks lastObject];
+            NSLog(@"Street: %@", _placemark.thoroughfare);
+            _locationLabel.text = _placemark.thoroughfare;
+        }
+    }];
 }
 
 -(IBAction)segmentedControllerIndexChanged:(id)sender {
-    switch (self.segmentedControl.selectedSegmentIndex) {
-        case 0:
-            _mapView.mapType = MKMapTypeStandard;
-            break;
-            
-        case 1:
-            _mapView.mapType = MKMapTypeSatellite;
-            break;
-        
-        case 2:
-            _mapView.mapType = MKMapTypeHybrid;
-            break;
-            
-        default:
-            break;
+    int index = (int)self.segmentedControl.selectedSegmentIndex;
+    if (index == 0) {
+        _mapView.mapType = MKMapTypeStandard;
+    } else if (index == 1) {
+        _mapView.mapType = MKMapTypeSatellite;
+    } else if (index == 2) {
+        _mapView.mapType = MKMapTypeHybrid;
+    } else {
+        NSLog(@"Index of segmented control is out of bounds: %d", index);
     }
 }
 
 -(IBAction)addPlacemarkToMap:(id)sender {
-    MapAnnotation* annotation = [[MapAnnotation alloc] initWithCoordinate:_location.coordinate street:_placemark.locality city:_placemark.locality];
-    [_mapView addAnnotation:annotation];
-}
-
--(void)reverseGeocodeLocation:(CLLocation*) location
-{
-    [_geocoder reverseGeocodeLocation:location completionHandler: ^(NSArray* placemarks, NSError* error) {
-        _placemark = [placemarks objectAtIndex:0];
-    }];
+    [_mapView addAnnotation:[[MapAnnotation alloc] initWithCoordinate:_location.coordinate street:_placemark.thoroughfare city:_placemark.locality]];
 }
 
 @end
