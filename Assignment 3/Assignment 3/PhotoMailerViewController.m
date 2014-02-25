@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Tony Klose. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "PhotoMailerViewController.h"
 
-@interface ViewController ()
+@interface PhotoMailerViewController ()
 
 @property(nonatomic, strong) NSMutableArray* questions;
 @property(nonatomic, strong) NSMutableArray* answers;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation ViewController
+@implementation PhotoMailerViewController
 
 - (void)viewDidLoad
 {

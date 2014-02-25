@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface PhotoMailerViewController : UIViewController
 
 @property(nonatomic, weak) IBOutlet UITextView* textView;
 @property(nonatomic, weak) IBOutlet UIButton* burnButton;

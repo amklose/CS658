@@ -14,7 +14,7 @@
 		4BFAAC2D18B1D2E4000A4BE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFAAC2C18B1D2E4000A4BE0 /* main.m */; };
 		4BFAAC3118B1D2E4000A4BE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFAAC3018B1D2E4000A4BE0 /* AppDelegate.m */; };
 		4BFAAC3418B1D2E4000A4BE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAAC3218B1D2E4000A4BE0 /* Main.storyboard */; };
-		4BFAAC3718B1D2E4000A4BE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFAAC3618B1D2E4000A4BE0 /* ViewController.m */; };
+		4BFAAC3718B1D2E4000A4BE0 /* PhotoMailerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFAAC3618B1D2E4000A4BE0 /* PhotoMailerViewController.m */; };
 		4BFAAC3918B1D2E4000A4BE0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAAC3818B1D2E4000A4BE0 /* Images.xcassets */; };
 		4BFAAC4018B1D2E4000A4BE0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFAAC3F18B1D2E4000A4BE0 /* XCTest.framework */; };
 		4BFAAC4118B1D2E4000A4BE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFAAC2018B1D2E4000A4BE0 /* Foundation.framework */; };
@@ -48,8 +48,8 @@
 		4BFAAC2F18B1D2E4000A4BE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4BFAAC3018B1D2E4000A4BE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4BFAAC3318B1D2E4000A4BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4BFAAC3518B1D2E4000A4BE0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4BFAAC3618B1D2E4000A4BE0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4BFAAC3518B1D2E4000A4BE0 /* PhotoMailerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoMailerViewController.h; sourceTree = "<group>"; };
+		4BFAAC3618B1D2E4000A4BE0 /* PhotoMailerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoMailerViewController.m; sourceTree = "<group>"; };
 		4BFAAC3818B1D2E4000A4BE0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4BFAAC3E18B1D2E4000A4BE0 /* Assignment 4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment 4Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFAAC3F18B1D2E4000A4BE0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -126,8 +126,8 @@
 				4BFAAC2F18B1D2E4000A4BE0 /* AppDelegate.h */,
 				4BFAAC3018B1D2E4000A4BE0 /* AppDelegate.m */,
 				4BFAAC3218B1D2E4000A4BE0 /* Main.storyboard */,
-				4BFAAC3518B1D2E4000A4BE0 /* ViewController.h */,
-				4BFAAC3618B1D2E4000A4BE0 /* ViewController.m */,
+				4BFAAC3518B1D2E4000A4BE0 /* PhotoMailerViewController.h */,
+				4BFAAC3618B1D2E4000A4BE0 /* PhotoMailerViewController.m */,
 				4BFAAC3818B1D2E4000A4BE0 /* Images.xcassets */,
 				4BFAAC2718B1D2E4000A4BE0 /* Supporting Files */,
 				E950AF7418B41E9100D3B4AA /* MapAnnotation.h */,
@@ -262,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BFAAC3718B1D2E4000A4BE0 /* ViewController.m in Sources */,
+				4BFAAC3718B1D2E4000A4BE0 /* PhotoMailerViewController.m in Sources */,
 				4BFAAC3118B1D2E4000A4BE0 /* AppDelegate.m in Sources */,
 				4BFAAC2D18B1D2E4000A4BE0 /* main.m in Sources */,
 				E950AF7618B41E9100D3B4AA /* MapAnnotation.m in Sources */,

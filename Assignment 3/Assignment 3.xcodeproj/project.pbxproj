@@ -14,7 +14,7 @@
 		4B4CF58318A8438A00EC8D18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CF58218A8438A00EC8D18 /* main.m */; };
 		4B4CF58718A8438A00EC8D18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CF58618A8438A00EC8D18 /* AppDelegate.m */; };
 		4B4CF58A18A8438A00EC8D18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4CF58818A8438A00EC8D18 /* Main.storyboard */; };
-		4B4CF58D18A8438A00EC8D18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CF58C18A8438A00EC8D18 /* ViewController.m */; };
+		4B4CF58D18A8438A00EC8D18 /* PhotoMailerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CF58C18A8438A00EC8D18 /* PhotoMailerViewController.m */; };
 		4B4CF58F18A8438A00EC8D18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B4CF58E18A8438A00EC8D18 /* Images.xcassets */; };
 		4B4CF59618A8438A00EC8D18 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4CF59518A8438A00EC8D18 /* XCTest.framework */; };
 		4B4CF59718A8438A00EC8D18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4CF57618A8438A00EC8D18 /* Foundation.framework */; };
@@ -45,8 +45,8 @@
 		4B4CF58518A8438A00EC8D18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4B4CF58618A8438A00EC8D18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4B4CF58918A8438A00EC8D18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4B4CF58B18A8438A00EC8D18 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4B4CF58C18A8438A00EC8D18 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4B4CF58B18A8438A00EC8D18 /* PhotoMailerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoMailerViewController.h; sourceTree = "<group>"; };
+		4B4CF58C18A8438A00EC8D18 /* PhotoMailerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoMailerViewController.m; sourceTree = "<group>"; };
 		4B4CF58E18A8438A00EC8D18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4B4CF59418A8438A00EC8D18 /* Assignment 3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment 3Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4CF59518A8438A00EC8D18 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -115,8 +115,8 @@
 				4B4CF58518A8438A00EC8D18 /* AppDelegate.h */,
 				4B4CF58618A8438A00EC8D18 /* AppDelegate.m */,
 				4B4CF58818A8438A00EC8D18 /* Main.storyboard */,
-				4B4CF58B18A8438A00EC8D18 /* ViewController.h */,
-				4B4CF58C18A8438A00EC8D18 /* ViewController.m */,
+				4B4CF58B18A8438A00EC8D18 /* PhotoMailerViewController.h */,
+				4B4CF58C18A8438A00EC8D18 /* PhotoMailerViewController.m */,
 				4B4CF58E18A8438A00EC8D18 /* Images.xcassets */,
 				4B4CF57D18A8438A00EC8D18 /* Supporting Files */,
 			);
@@ -249,7 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B4CF58D18A8438A00EC8D18 /* ViewController.m in Sources */,
+				4B4CF58D18A8438A00EC8D18 /* PhotoMailerViewController.m in Sources */,
 				4B4CF58718A8438A00EC8D18 /* AppDelegate.m in Sources */,
 				4B4CF58318A8438A00EC8D18 /* main.m in Sources */,
 			);
@@ -460,6 +460,7 @@
 				4B4CF5A718A8438A00EC8D18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B4CF5A818A8438A00EC8D18 /* Build configuration list for PBXNativeTarget "Assignment 3Tests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +469,7 @@
 				4B4CF5AA18A8438A00EC8D18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

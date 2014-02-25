@@ -10,7 +10,7 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+@interface PhotoMailerViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
 // Public properties
 @property(nonatomic, weak) IBOutlet UISegmentedControl* segmentedControl;

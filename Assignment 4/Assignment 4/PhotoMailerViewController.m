@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Tony Klose. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "PhotoMailerViewController.h"
 #import "MapAnnotation.h"
 
-@interface ViewController ()
+@interface PhotoMailerViewController ()
 
 // Private properties
 @property(nonatomic, strong) CLPlacemark* placemark;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation ViewController
+@implementation PhotoMailerViewController
 
 - (void)viewDidLoad
 {

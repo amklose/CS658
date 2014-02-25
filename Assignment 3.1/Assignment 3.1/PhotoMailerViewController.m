@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 Anthony Michael Klose. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "PhotoMailerViewController.h"
 #import "BurnGenerator.h"
 #import "MadLibGenerator.h"
 
-@interface ViewController ()
+@interface PhotoMailerViewController ()
 
 @end
 
-@implementation ViewController
+@implementation PhotoMailerViewController
 
 - (void)viewDidLoad
 {
