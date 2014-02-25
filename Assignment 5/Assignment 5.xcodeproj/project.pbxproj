@@ -21,6 +21,7 @@
 		4B24B72718BC53B9006E94FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B24B70918BC53B9006E94FA /* UIKit.framework */; };
 		4B24B72F18BC53B9006E94FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B24B72D18BC53B9006E94FA /* InfoPlist.strings */; };
 		4B24B73118BC53B9006E94FA /* Assignment_5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B24B73018BC53B9006E94FA /* Assignment_5Tests.m */; };
+		4B24B73B18BC5ED0006E94FA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B24B73A18BC5ED0006E94FA /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		4B24B72C18BC53B9006E94FA /* Assignment 5Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment 5Tests-Info.plist"; sourceTree = "<group>"; };
 		4B24B72E18BC53B9006E94FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4B24B73018BC53B9006E94FA /* Assignment_5Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment_5Tests.m; sourceTree = "<group>"; };
+		4B24B73A18BC5ED0006E94FA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B24B73B18BC5ED0006E94FA /* MessageUI.framework in Frameworks */,
 				4B24B70818BC53B9006E94FA /* CoreGraphics.framework in Frameworks */,
 				4B24B70A18BC53B9006E94FA /* UIKit.framework in Frameworks */,
 				4B24B70618BC53B9006E94FA /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		4B24B70418BC53B9006E94FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B24B73A18BC5ED0006E94FA /* MessageUI.framework */,
 				4B24B70518BC53B9006E94FA /* Foundation.framework */,
 				4B24B70718BC53B9006E94FA /* CoreGraphics.framework */,
 				4B24B70918BC53B9006E94FA /* UIKit.framework */,

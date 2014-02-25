@@ -15,10 +15,40 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oml-sZ-1UP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="749-cN-9gJ" appends="YES" id="bBO-ck-wUx"/>
+                                    <outletCollection property="gestureRecognizers" destination="pnw-Wj-oNW" appends="YES" id="yFo-ck-f8b"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Oml-sZ-1UP" secondAttribute="trailing" id="9d1-fa-sZ1"/>
+                            <constraint firstItem="Oml-sZ-1UP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="JYO-OI-Rzj"/>
+                            <constraint firstItem="Oml-sZ-1UP" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="LMr-RM-uee"/>
+                            <constraint firstItem="1uG-GV-SkU" firstAttribute="top" secondItem="Oml-sZ-1UP" secondAttribute="bottom" id="fRM-3t-00u"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Oml-sZ-1UP" id="aW5-EH-qQY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="749-cN-9gJ">
+                    <connections>
+                        <action selector="imageTapped:" destination="vXZ-lx-hvc" id="mRQ-eb-PtC"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="pnw-Wj-oNW">
+                    <connections>
+                        <action selector="imageLongPressed:" destination="vXZ-lx-hvc" id="hy0-H6-aqE"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
         </scene>
     </scenes>
