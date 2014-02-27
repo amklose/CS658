@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MemeGeneratorViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface MemeGeneratorViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
 
+@property(nonatomic, weak) IBOutlet UIScrollView* scrollView;
 @property(nonatomic, weak) IBOutlet UIImageView* imageView;
 @property(nonatomic, weak) IBOutlet UITextView* upperText;
 @property(nonatomic, weak) IBOutlet UITextView* lowerText;
