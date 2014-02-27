@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B02E49018BFDF3A0048D60D /* impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B02E48F18BFDF3A0048D60D /* impact.ttf */; };
 		E942053E18BD4F27003A3776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E942053D18BD4F27003A3776 /* Foundation.framework */; };
 		E942054018BD4F27003A3776 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E942053F18BD4F27003A3776 /* CoreGraphics.framework */; };
 		E942054218BD4F27003A3776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E942054118BD4F27003A3776 /* UIKit.framework */; };
@@ -21,7 +22,6 @@
 		E942055F18BD4F28003A3776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E942054118BD4F27003A3776 /* UIKit.framework */; };
 		E942056718BD4F28003A3776 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E942056518BD4F28003A3776 /* InfoPlist.strings */; };
 		E942056918BD4F28003A3776 /* Assignment_5_1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E942056818BD4F28003A3776 /* Assignment_5_1Tests.m */; };
-		E942057318BD518D003A3776 /* impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E942057218BD518D003A3776 /* impact.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B02E48F18BFDF3A0048D60D /* impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = impact.ttf; sourceTree = "<group>"; };
 		E942053A18BD4F27003A3776 /* Assignment 5.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment 5.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E942053D18BD4F27003A3776 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E942053F18BD4F27003A3776 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,7 +55,6 @@
 		E942056418BD4F28003A3776 /* Assignment 5.1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment 5.1Tests-Info.plist"; sourceTree = "<group>"; };
 		E942056618BD4F28003A3776 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E942056818BD4F28003A3776 /* Assignment_5_1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment_5_1Tests.m; sourceTree = "<group>"; };
-		E942057218BD518D003A3776 /* impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = impact.ttf; path = /Users/amklose/Downloads/impact.ttf; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B02E49118BFDF910048D60D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B02E48F18BFDF3A0048D60D /* impact.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		E942053118BD4F26003A3776 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +122,7 @@
 		E942054318BD4F28003A3776 /* Assignment 5.1 */ = {
 			isa = PBXGroup;
 			children = (
+				4B02E49118BFDF910048D60D /* Resources */,
 				E942054C18BD4F28003A3776 /* AppDelegate.h */,
 				E942054D18BD4F28003A3776 /* AppDelegate.m */,
 				E942054F18BD4F28003A3776 /* Main.storyboard */,
@@ -128,7 +137,6 @@
 		E942054418BD4F28003A3776 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E942057218BD518D003A3776 /* impact.ttf */,
 				E942054518BD4F28003A3776 /* Assignment 5.1-Info.plist */,
 				E942054618BD4F28003A3776 /* InfoPlist.strings */,
 				E942054918BD4F28003A3776 /* main.m */,
@@ -231,7 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E942057318BD518D003A3776 /* impact.ttf in Resources */,
+				4B02E49018BFDF3A0048D60D /* impact.ttf in Resources */,
 				E942055618BD4F28003A3776 /* Images.xcassets in Resources */,
 				E942054818BD4F28003A3776 /* InfoPlist.strings in Resources */,
 				E942055118BD4F28003A3776 /* Main.storyboard in Resources */,
@@ -464,6 +472,7 @@
 				E942056E18BD4F28003A3776 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E942056F18BD4F28003A3776 /* Build configuration list for PBXNativeTarget "Assignment 5.1Tests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +481,7 @@
 				E942057118BD4F28003A3776 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,7 +11,7 @@
 @interface MemeGeneratorViewController ()
 
 - (IBAction)ImageTapped:(id)sender;
-
+- (IBAction)UpdateVerticalPosition:(id)sender;
 
 @end
 
@@ -22,18 +22,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     UIFont* font = [UIFont fontWithName:@"impact" size:18];
-    self.upperText.font = font;
-    self.upperText.textColor = [UIColor whiteColor];
-    self.upperText.layer.shadowColor = [[UIColor blackColor] CGColor];
-    self.upperText.layer.shadowOffset = CGSizeMake(2.0f, 2.0f);
-    self.upperText.layer.shadowOpacity = 1.0f;
-    self.upperText.layer.shadowRadius = 2.0f;
-    self.lowerText.font = font;
-    self.lowerText.textColor = [UIColor whiteColor];
-    self.lowerText.layer.shadowColor = [[UIColor blackColor] CGColor];
-    self.lowerText.layer.shadowOffset = CGSizeMake(2.0f, 2.0f);
-    self.lowerText.layer.shadowOpacity = 1.0f;
-    self.lowerText.layer.shadowRadius = 2.0f;
+    self.upperText.font = self.lowerText.font = font;
+    self.upperText.textColor = self.lowerText.textColor = [UIColor whiteColor];
+    self.upperText.layer.shadowColor = self.lowerText.layer.shadowColor = [[UIColor blackColor] CGColor];
+    self.upperText.layer.shadowOffset = self.lowerText.layer.shadowOffset = CGSizeMake(2.0f, 2.0f);
+    self.upperText.layer.shadowOpacity = self.lowerText.layer.shadowOpacity = 1.0f;
+    self.upperText.layer.shadowRadius = self.lowerText.layer.shadowRadius = 2.0f;
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -58,6 +52,15 @@
         imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     }
     [self presentViewController:imagePicker animated:YES completion:nil];
+}
+
+- (IBAction)UpdateVerticalPosition:(id)sender
+{
+    UIPanGestureRecognizer* recognizer = (UIPanGestureRecognizer*)sender;
+    UIView* view = recognizer.view;
+    CGPoint translation = [recognizer translationInView:view];
+    view.center = CGPointMake(view.center.x, view.center.y + translation.y);
+    [recognizer setTranslation:CGPointMake(0, 0) inView:view];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
