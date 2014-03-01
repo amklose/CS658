@@ -11,8 +11,10 @@
 @interface MemeGeneratorViewController ()
 
 - (IBAction)ImageTapped:(id)sender;
-- (IBAction)UpdateVerticalPosition:(id)sender;
-@property UITextField* activeField;
+
+@property(nonatomic) int keyboardSize;
+@property(nonatomic) bool currentlyEditingText;
+@property(nonatomic, weak) UITextView* activeTextView;
 
 @end
 
@@ -23,16 +25,18 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     UIFont* font = [UIFont fontWithName:@"impact" size:18];
-    self.upperText.font = self.lowerText.font = font;
-    self.upperText.textColor = self.lowerText.textColor = [UIColor whiteColor];
-    self.upperText.layer.shadowColor = self.lowerText.layer.shadowColor = [[UIColor blackColor] CGColor];
-    self.upperText.layer.shadowOffset = self.lowerText.layer.shadowOffset = CGSizeMake(2.0f, 2.0f);
-    self.upperText.layer.shadowOpacity = self.lowerText.layer.shadowOpacity = 1.0f;
-    self.upperText.layer.shadowRadius = self.lowerText.layer.shadowRadius = 2.0f;
+    _upperText.font = _lowerText.font = font;
+    _upperText.textColor = _lowerText.textColor = [UIColor whiteColor];
+    _upperText.layer.shadowColor = _lowerText.layer.shadowColor = [[UIColor blackColor] CGColor];
+    _upperText.layer.shadowOffset = _lowerText.layer.shadowOffset = CGSizeMake(2.0f, 2.0f);
+    _upperText.layer.shadowOpacity = _lowerText.layer.shadowOpacity = 1.0f;
+    _upperText.layer.shadowRadius = _lowerText.layer.shadowRadius = 2.0f;
     
     _upperText.delegate = self;
     _lowerText.delegate = self;
+    _scrollView.delegate = self;
     
+    _currentlyEditingText = false;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWasShown:) name:UIKeyboardDidShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillBeHidden:) name:UIKeyboardWillHideNotification object:nil];
@@ -57,50 +61,43 @@
     [self presentViewController:imagePicker animated:YES completion:nil];
 }
 
-- (IBAction)UpdateVerticalPosition:(id)sender
-{
-    UIPanGestureRecognizer* recognizer = (UIPanGestureRecognizer*)sender;
-    UIView* view = recognizer.view;
-    CGPoint translation = [recognizer translationInView:view];
-    view.center = CGPointMake(view.center.x, view.center.y + translation.y);
-    [recognizer setTranslation:CGPointMake(0, 0) inView:view];
-}
-
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     _imageView.image = [info objectForKey:UIImagePickerControllerOriginalImage];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)keyboardWasShown:(NSNotification*)notification
+- (void)keyboardWasShown:(NSNotification*)aNotification
 {
-    NSDictionary* info = [notification userInfo];
-    CGSize keyboardSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
-    UIEdgeInsets contentInsets  = UIEdgeInsetsMake(0.0, 0.0, keyboardSize.height, 0.0);
-    _scrollView.contentInset = contentInsets;
-    _scrollView.scrollIndicatorInsets = contentInsets;
-    CGRect rect = self.view.frame;
-    rect.size.height -= keyboardSize.height;
-    if (!CGRectContainsPoint(rect, _activeField.frame.origin)) {
-        [_scrollView scrollRectToVisible:_activeField.frame animated:YES];
-    }
+    NSDictionary* userInfo = [aNotification userInfo];
+    CGRect keyboardInfoFrame = [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    int width = keyboardInfoFrame.size.width;
+    int height = keyboardInfoFrame.size.height;
+    _keyboardSize = (width < height) ? width : height;
 }
 
-- (void)keyboardWillBeHidden:(NSNotification*)notification
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
+{
+    if ((orientation == UIInterfaceOrientationPortrait) || (orientation == UIInterfaceOrientationLandscapeLeft) || (orientation == UIInterfaceOrientationLandscapeRight))
+        return YES;
+    return NO;
+}
+
+- (void)keyboardWillBeHidden:(NSNotification*)aNotification
 {
     UIEdgeInsets contentInsets = UIEdgeInsetsZero;
     _scrollView.contentInset = contentInsets;
     _scrollView.scrollIndicatorInsets = contentInsets;
 }
 
-- (void)textFieldDidBeginEditing:(UITextField *)textField
+- (void)textViewDidBeginEditing:(UITextView *)textView
 {
-    _activeField = textField;
+    CGPoint scrollPoint = CGPointMake(0, _keyboardSize);
+    [_scrollView setContentOffset:scrollPoint animated:YES];
 }
-
-- (void)textFieldDidEndEditing:(UITextField *)textField
+- (void)textViewDidEndEditing:(UITextView *)textview
 {
-    _activeField = nil;
+    _activeTextView = nil;
 }
 
 @end
