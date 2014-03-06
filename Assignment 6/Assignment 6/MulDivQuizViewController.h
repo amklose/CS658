@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QuizViewController : UIViewController
+@interface MulDivQuizViewController : UIViewController
 
 @property(nonatomic, strong)IBOutletCollection(UILabel) NSArray* questionLabels;
 @property(nonatomic, strong)IBOutletCollection(UITextField) NSArray* answerTextFields;

@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Tony Klose. All rights reserved.
 //
 
-#import "FlashCardsViewController.h"
+#import "AddSubFlashCardsViewController.h"
 
-@interface FlashCardsViewController ()
+@interface AddSubFlashCardsViewController ()
 
 - (IBAction)viewTapped:(id)sender;
 @property(nonatomic) BOOL solutionDisplayed;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation FlashCardsViewController
+@implementation AddSubFlashCardsViewController
 
 - (void)displayNewProblem
 {

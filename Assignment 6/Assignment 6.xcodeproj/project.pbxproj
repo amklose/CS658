@@ -14,8 +14,8 @@
 		4BE107A418C6CA9B00E1B902 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE107A318C6CA9B00E1B902 /* main.m */; };
 		4BE107A818C6CA9B00E1B902 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE107A718C6CA9B00E1B902 /* AppDelegate.m */; };
 		4BE107AB18C6CA9B00E1B902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BE107A918C6CA9B00E1B902 /* Main.storyboard */; };
-		4BE107AE18C6CA9B00E1B902 /* FlashCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE107AD18C6CA9B00E1B902 /* FlashCardsViewController.m */; };
-		4BE107B118C6CA9B00E1B902 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE107B018C6CA9B00E1B902 /* QuizViewController.m */; };
+		4BE107AE18C6CA9B00E1B902 /* AddSubFlashCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE107AD18C6CA9B00E1B902 /* AddSubFlashCardsViewController.m */; };
+		4BE107B118C6CA9B00E1B902 /* AddSubQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE107B018C6CA9B00E1B902 /* AddSubQuizViewController.m */; };
 		4BE107B318C6CA9B00E1B902 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BE107B218C6CA9B00E1B902 /* Images.xcassets */; };
 		4BE107BA18C6CA9B00E1B902 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE107B918C6CA9B00E1B902 /* XCTest.framework */; };
 		4BE107BB18C6CA9B00E1B902 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE1079718C6CA9B00E1B902 /* Foundation.framework */; };
@@ -31,6 +31,8 @@
 		4BE107DF18C705E100E1B902 /* mathHelperSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE107D618C705E100E1B902 /* mathHelperSmall.png */; };
 		4BE107E018C705E100E1B902 /* quiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE107D718C705E100E1B902 /* quiz.png */; };
 		4BE107E118C705E100E1B902 /* quiz2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE107D818C705E100E1B902 /* quiz2.png */; };
+		E91C463018C92F0A0011BF9D /* MulDivFlashCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91C462D18C92F0A0011BF9D /* MulDivFlashCardsViewController.m */; };
+		E91C463118C92F0A0011BF9D /* MulDivQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91C462F18C92F0A0011BF9D /* MulDivQuizViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +57,10 @@
 		4BE107A618C6CA9B00E1B902 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4BE107A718C6CA9B00E1B902 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4BE107AA18C6CA9B00E1B902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4BE107AC18C6CA9B00E1B902 /* FlashCardsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlashCardsViewController.h; sourceTree = "<group>"; };
-		4BE107AD18C6CA9B00E1B902 /* FlashCardsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlashCardsViewController.m; sourceTree = "<group>"; };
-		4BE107AF18C6CA9B00E1B902 /* QuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
-		4BE107B018C6CA9B00E1B902 /* QuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		4BE107AC18C6CA9B00E1B902 /* AddSubFlashCardsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddSubFlashCardsViewController.h; sourceTree = "<group>"; };
+		4BE107AD18C6CA9B00E1B902 /* AddSubFlashCardsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddSubFlashCardsViewController.m; sourceTree = "<group>"; };
+		4BE107AF18C6CA9B00E1B902 /* AddSubQuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddSubQuizViewController.h; sourceTree = "<group>"; };
+		4BE107B018C6CA9B00E1B902 /* AddSubQuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddSubQuizViewController.m; sourceTree = "<group>"; };
 		4BE107B218C6CA9B00E1B902 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4BE107B818C6CA9B00E1B902 /* Assignment 6Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment 6Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE107B918C6CA9B00E1B902 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -74,6 +76,10 @@
 		4BE107D618C705E100E1B902 /* mathHelperSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mathHelperSmall.png; path = "MathHelper Images/mathHelperSmall.png"; sourceTree = "<group>"; };
 		4BE107D718C705E100E1B902 /* quiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quiz.png; path = "MathHelper Images/quiz.png"; sourceTree = "<group>"; };
 		4BE107D818C705E100E1B902 /* quiz2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quiz2.png; path = "MathHelper Images/quiz2.png"; sourceTree = "<group>"; };
+		E91C462C18C92F0A0011BF9D /* MulDivFlashCardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MulDivFlashCardsViewController.h; sourceTree = "<group>"; };
+		E91C462D18C92F0A0011BF9D /* MulDivFlashCardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MulDivFlashCardsViewController.m; sourceTree = "<group>"; };
+		E91C462E18C92F0A0011BF9D /* MulDivQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MulDivQuizViewController.h; sourceTree = "<group>"; };
+		E91C462F18C92F0A0011BF9D /* MulDivQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MulDivQuizViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,13 +140,17 @@
 		4BE1079D18C6CA9B00E1B902 /* Assignment 6 */ = {
 			isa = PBXGroup;
 			children = (
+				E91C462C18C92F0A0011BF9D /* MulDivFlashCardsViewController.h */,
+				E91C462D18C92F0A0011BF9D /* MulDivFlashCardsViewController.m */,
+				E91C462E18C92F0A0011BF9D /* MulDivQuizViewController.h */,
+				E91C462F18C92F0A0011BF9D /* MulDivQuizViewController.m */,
 				4BE107A618C6CA9B00E1B902 /* AppDelegate.h */,
 				4BE107A718C6CA9B00E1B902 /* AppDelegate.m */,
 				4BE107A918C6CA9B00E1B902 /* Main.storyboard */,
-				4BE107AC18C6CA9B00E1B902 /* FlashCardsViewController.h */,
-				4BE107AD18C6CA9B00E1B902 /* FlashCardsViewController.m */,
-				4BE107AF18C6CA9B00E1B902 /* QuizViewController.h */,
-				4BE107B018C6CA9B00E1B902 /* QuizViewController.m */,
+				4BE107AC18C6CA9B00E1B902 /* AddSubFlashCardsViewController.h */,
+				4BE107AD18C6CA9B00E1B902 /* AddSubFlashCardsViewController.m */,
+				4BE107AF18C6CA9B00E1B902 /* AddSubQuizViewController.h */,
+				4BE107B018C6CA9B00E1B902 /* AddSubQuizViewController.m */,
 				4BE107B218C6CA9B00E1B902 /* Images.xcassets */,
 				4BE1079E18C6CA9B00E1B902 /* Supporting Files */,
 			);
@@ -298,9 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BE107B118C6CA9B00E1B902 /* QuizViewController.m in Sources */,
+				4BE107B118C6CA9B00E1B902 /* AddSubQuizViewController.m in Sources */,
 				4BE107A818C6CA9B00E1B902 /* AppDelegate.m in Sources */,
-				4BE107AE18C6CA9B00E1B902 /* FlashCardsViewController.m in Sources */,
+				E91C463018C92F0A0011BF9D /* MulDivFlashCardsViewController.m in Sources */,
+				4BE107AE18C6CA9B00E1B902 /* AddSubFlashCardsViewController.m in Sources */,
+				E91C463118C92F0A0011BF9D /* MulDivQuizViewController.m in Sources */,
 				4BE107A418C6CA9B00E1B902 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

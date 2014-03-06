@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FlashCardsViewController : UIViewController
+@interface AddSubFlashCardsViewController : UIViewController
 
 @property(nonatomic, weak) IBOutlet UILabel* op1Label;
 @property(nonatomic, weak) IBOutlet UILabel* op2Label;

@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 Tony Klose. All rights reserved.
 //
 
-#import "QuizViewController.h"
+#import "AddSubQuizViewController.h"
 #define PORTRAIT_KEYBOARD_HEIGHT (216)
 
-@interface QuizViewController ()
+@interface AddSubQuizViewController ()
 @property(nonatomic, strong) NSMutableArray* answers;
 @property(nonatomic, strong) UIImage* correctImage;
 @property(nonatomic, strong) UIImage* incorrectImage;
 
 @end
 
-@implementation QuizViewController
+@implementation AddSubQuizViewController
 
 - (void)viewDidLoad
 {
@@ -44,7 +44,7 @@
         operand2 = arc4random_uniform(99);
         int operation = arc4random_uniform(2);
         NSString* operator = operation == 0 ? @"+" : @"-";
-        [questionLabel setText:[NSString stringWithFormat:@"%i %@ %i\t=", operand1, operator, operand2]];
+        [questionLabel setText:[NSString stringWithFormat:@"%i %@ %i%@=", operand1, operator, operand2, (operand1 < 10 && operand2 < 10) ? @"\t\t" : @"\t"]];
         [_answers addObject:[NSString stringWithFormat:@"%i", (operation == 0) ? (operand1 + operand2) : (operand1 - operand2)]];
     }
 }
