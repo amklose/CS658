@@ -15,6 +15,7 @@
 @property(nonatomic, weak) IBOutlet UILabel* leftLabel;
 @property(nonatomic, weak) IBOutlet UILabel* bottomLabel;
 
+- (void)setUpLines;
 - (void)generateNewProblem;
 - (void)displayMulProblem;
 - (void)displayDivProblem;
