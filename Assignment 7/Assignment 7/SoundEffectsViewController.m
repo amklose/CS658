@@ -7,7 +7,7 @@
 //
 
 #import "SoundEffectsViewController.h"
-#import "catSound.h"
+#import "CatSound.h"
 
 @interface SoundEffectsViewController ()
 

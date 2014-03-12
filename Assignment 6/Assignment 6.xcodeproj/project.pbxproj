@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B6E324E18D0273D00C71C04 /* correct.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E324518D0273D00C71C04 /* correct.jpg */; };
+		4B6E324F18D0273D00C71C04 /* flashCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E324618D0273D00C71C04 /* flashCard.png */; };
+		4B6E325018D0273D00C71C04 /* flashCards2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E324718D0273D00C71C04 /* flashCards2.png */; };
+		4B6E325118D0273D00C71C04 /* incorrect.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E324818D0273D00C71C04 /* incorrect.jpg */; };
+		4B6E325218D0273D00C71C04 /* mathHelper.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E324918D0273D00C71C04 /* mathHelper.png */; };
+		4B6E325318D0273D00C71C04 /* mathHelperBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E324A18D0273D00C71C04 /* mathHelperBig.png */; };
+		4B6E325418D0273D00C71C04 /* mathHelperSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E324B18D0273D00C71C04 /* mathHelperSmall.png */; };
+		4B6E325518D0273D00C71C04 /* quiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E324C18D0273D00C71C04 /* quiz.png */; };
+		4B6E325618D0273D00C71C04 /* quiz2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E324D18D0273D00C71C04 /* quiz2.png */; };
 		4BE1079818C6CA9B00E1B902 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE1079718C6CA9B00E1B902 /* Foundation.framework */; };
 		4BE1079A18C6CA9B00E1B902 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE1079918C6CA9B00E1B902 /* CoreGraphics.framework */; };
 		4BE1079C18C6CA9B00E1B902 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE1079B18C6CA9B00E1B902 /* UIKit.framework */; };
@@ -22,15 +31,6 @@
 		4BE107BC18C6CA9B00E1B902 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE1079B18C6CA9B00E1B902 /* UIKit.framework */; };
 		4BE107C418C6CA9B00E1B902 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BE107C218C6CA9B00E1B902 /* InfoPlist.strings */; };
 		4BE107C618C6CA9B00E1B902 /* Assignment_6Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE107C518C6CA9B00E1B902 /* Assignment_6Tests.m */; };
-		4BE107D918C705E100E1B902 /* correct.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BE107D018C705E100E1B902 /* correct.jpg */; };
-		4BE107DA18C705E100E1B902 /* flashCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE107D118C705E100E1B902 /* flashCard.png */; };
-		4BE107DB18C705E100E1B902 /* flashCards2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE107D218C705E100E1B902 /* flashCards2.png */; };
-		4BE107DC18C705E100E1B902 /* incorrect.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BE107D318C705E100E1B902 /* incorrect.jpg */; };
-		4BE107DD18C705E100E1B902 /* mathHelper.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE107D418C705E100E1B902 /* mathHelper.png */; };
-		4BE107DE18C705E100E1B902 /* mathHelperBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE107D518C705E100E1B902 /* mathHelperBig.png */; };
-		4BE107DF18C705E100E1B902 /* mathHelperSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE107D618C705E100E1B902 /* mathHelperSmall.png */; };
-		4BE107E018C705E100E1B902 /* quiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE107D718C705E100E1B902 /* quiz.png */; };
-		4BE107E118C705E100E1B902 /* quiz2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE107D818C705E100E1B902 /* quiz2.png */; };
 		E91C463018C92F0A0011BF9D /* MulDivFlashCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91C462D18C92F0A0011BF9D /* MulDivFlashCardsViewController.m */; };
 		E91C463118C92F0A0011BF9D /* MulDivQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91C462F18C92F0A0011BF9D /* MulDivQuizViewController.m */; };
 /* End PBXBuildFile section */
@@ -46,6 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B6E324518D0273D00C71C04 /* correct.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = correct.jpg; path = "../../../../Downloads/MathHelper Images/correct.jpg"; sourceTree = "<group>"; };
+		4B6E324618D0273D00C71C04 /* flashCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flashCard.png; path = "../../../../Downloads/MathHelper Images/flashCard.png"; sourceTree = "<group>"; };
+		4B6E324718D0273D00C71C04 /* flashCards2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flashCards2.png; path = "../../../../Downloads/MathHelper Images/flashCards2.png"; sourceTree = "<group>"; };
+		4B6E324818D0273D00C71C04 /* incorrect.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = incorrect.jpg; path = "../../../../Downloads/MathHelper Images/incorrect.jpg"; sourceTree = "<group>"; };
+		4B6E324918D0273D00C71C04 /* mathHelper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mathHelper.png; path = "../../../../Downloads/MathHelper Images/mathHelper.png"; sourceTree = "<group>"; };
+		4B6E324A18D0273D00C71C04 /* mathHelperBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mathHelperBig.png; path = "../../../../Downloads/MathHelper Images/mathHelperBig.png"; sourceTree = "<group>"; };
+		4B6E324B18D0273D00C71C04 /* mathHelperSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mathHelperSmall.png; path = "../../../../Downloads/MathHelper Images/mathHelperSmall.png"; sourceTree = "<group>"; };
+		4B6E324C18D0273D00C71C04 /* quiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quiz.png; path = "../../../../Downloads/MathHelper Images/quiz.png"; sourceTree = "<group>"; };
+		4B6E324D18D0273D00C71C04 /* quiz2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quiz2.png; path = "../../../../Downloads/MathHelper Images/quiz2.png"; sourceTree = "<group>"; };
 		4BE1079418C6CA9B00E1B902 /* Assignment 6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment 6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE1079718C6CA9B00E1B902 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BE1079918C6CA9B00E1B902 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -67,15 +76,6 @@
 		4BE107C118C6CA9B00E1B902 /* Assignment 6Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment 6Tests-Info.plist"; sourceTree = "<group>"; };
 		4BE107C318C6CA9B00E1B902 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4BE107C518C6CA9B00E1B902 /* Assignment_6Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment_6Tests.m; sourceTree = "<group>"; };
-		4BE107D018C705E100E1B902 /* correct.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = correct.jpg; path = "MathHelper Images/correct.jpg"; sourceTree = "<group>"; };
-		4BE107D118C705E100E1B902 /* flashCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flashCard.png; path = "MathHelper Images/flashCard.png"; sourceTree = "<group>"; };
-		4BE107D218C705E100E1B902 /* flashCards2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flashCards2.png; path = "MathHelper Images/flashCards2.png"; sourceTree = "<group>"; };
-		4BE107D318C705E100E1B902 /* incorrect.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = incorrect.jpg; path = "MathHelper Images/incorrect.jpg"; sourceTree = "<group>"; };
-		4BE107D418C705E100E1B902 /* mathHelper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mathHelper.png; path = "MathHelper Images/mathHelper.png"; sourceTree = "<group>"; };
-		4BE107D518C705E100E1B902 /* mathHelperBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mathHelperBig.png; path = "MathHelper Images/mathHelperBig.png"; sourceTree = "<group>"; };
-		4BE107D618C705E100E1B902 /* mathHelperSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mathHelperSmall.png; path = "MathHelper Images/mathHelperSmall.png"; sourceTree = "<group>"; };
-		4BE107D718C705E100E1B902 /* quiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quiz.png; path = "MathHelper Images/quiz.png"; sourceTree = "<group>"; };
-		4BE107D818C705E100E1B902 /* quiz2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quiz2.png; path = "MathHelper Images/quiz2.png"; sourceTree = "<group>"; };
 		E91C462C18C92F0A0011BF9D /* MulDivFlashCardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MulDivFlashCardsViewController.h; sourceTree = "<group>"; };
 		E91C462D18C92F0A0011BF9D /* MulDivFlashCardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MulDivFlashCardsViewController.m; sourceTree = "<group>"; };
 		E91C462E18C92F0A0011BF9D /* MulDivQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MulDivQuizViewController.h; sourceTree = "<group>"; };
@@ -189,15 +189,15 @@
 		4BE107CF18C705CA00E1B902 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4BE107D018C705E100E1B902 /* correct.jpg */,
-				4BE107D118C705E100E1B902 /* flashCard.png */,
-				4BE107D218C705E100E1B902 /* flashCards2.png */,
-				4BE107D318C705E100E1B902 /* incorrect.jpg */,
-				4BE107D418C705E100E1B902 /* mathHelper.png */,
-				4BE107D518C705E100E1B902 /* mathHelperBig.png */,
-				4BE107D618C705E100E1B902 /* mathHelperSmall.png */,
-				4BE107D718C705E100E1B902 /* quiz.png */,
-				4BE107D818C705E100E1B902 /* quiz2.png */,
+				4B6E324518D0273D00C71C04 /* correct.jpg */,
+				4B6E324618D0273D00C71C04 /* flashCard.png */,
+				4B6E324718D0273D00C71C04 /* flashCards2.png */,
+				4B6E324818D0273D00C71C04 /* incorrect.jpg */,
+				4B6E324918D0273D00C71C04 /* mathHelper.png */,
+				4B6E324A18D0273D00C71C04 /* mathHelperBig.png */,
+				4B6E324B18D0273D00C71C04 /* mathHelperSmall.png */,
+				4B6E324C18D0273D00C71C04 /* quiz.png */,
+				4B6E324D18D0273D00C71C04 /* quiz2.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -278,18 +278,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BE107E018C705E100E1B902 /* quiz.png in Resources */,
-				4BE107D918C705E100E1B902 /* correct.jpg in Resources */,
-				4BE107DB18C705E100E1B902 /* flashCards2.png in Resources */,
-				4BE107DA18C705E100E1B902 /* flashCard.png in Resources */,
-				4BE107DF18C705E100E1B902 /* mathHelperSmall.png in Resources */,
-				4BE107DD18C705E100E1B902 /* mathHelper.png in Resources */,
-				4BE107DE18C705E100E1B902 /* mathHelperBig.png in Resources */,
+				4B6E325518D0273D00C71C04 /* quiz.png in Resources */,
+				4B6E324E18D0273D00C71C04 /* correct.jpg in Resources */,
+				4B6E325018D0273D00C71C04 /* flashCards2.png in Resources */,
+				4B6E324F18D0273D00C71C04 /* flashCard.png in Resources */,
+				4B6E325418D0273D00C71C04 /* mathHelperSmall.png in Resources */,
+				4B6E325218D0273D00C71C04 /* mathHelper.png in Resources */,
+				4B6E325318D0273D00C71C04 /* mathHelperBig.png in Resources */,
 				4BE107B318C6CA9B00E1B902 /* Images.xcassets in Resources */,
 				4BE107A218C6CA9B00E1B902 /* InfoPlist.strings in Resources */,
-				4BE107DC18C705E100E1B902 /* incorrect.jpg in Resources */,
+				4B6E325118D0273D00C71C04 /* incorrect.jpg in Resources */,
 				4BE107AB18C6CA9B00E1B902 /* Main.storyboard in Resources */,
-				4BE107E118C705E100E1B902 /* quiz2.png in Resources */,
+				4B6E325618D0273D00C71C04 /* quiz2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
