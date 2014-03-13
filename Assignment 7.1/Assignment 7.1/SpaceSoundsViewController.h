@@ -10,4 +10,6 @@
 
 @interface SpaceSoundsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property(nonatomic, strong) NSMutableArray *tableArray;
+
 @end
