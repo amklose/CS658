@@ -7,6 +7,7 @@
 //
 
 #import "ToDoListTableViewCell.h"
+#import "ToDoListItem.h"
 
 @implementation ToDoListTableViewCell
 
@@ -31,6 +32,15 @@
     // Configure the view for the selected state
 }
 
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [self.item setTitle:(NSMutableString*)textField.text];
+}
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return NO;
+}
 
 @end
