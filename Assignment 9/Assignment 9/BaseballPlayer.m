@@ -12,7 +12,7 @@
 
 - (id)init
 {
-    return [self initWithFirstName:@"New" lastName:@"Name" position:@""];
+    return [self initWithFirstName:@"" lastName:@"" position:@""];
 }
 
 - (id)initWithFirstName:(NSString*)firstName lastName:(NSString*)lastName position:(NSString*)position

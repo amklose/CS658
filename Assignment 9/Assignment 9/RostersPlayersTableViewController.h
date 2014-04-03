@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RostersAddEditPlayerViewController.h"
 
-@interface RostersPlayersTableViewController : UITableViewController
+@interface RostersPlayersTableViewController : UITableViewController <RostersAddPlayerDelegate>
 
 @property(nonatomic, weak) NSMutableArray* players;
+@property(nonatomic, strong) BaseballPlayer* dummyPlayer;
+
+- (void)addPlayer;
 
 @end

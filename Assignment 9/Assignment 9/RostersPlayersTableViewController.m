@@ -33,7 +33,9 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addPlayer)];
+    [[self navigationItem] setRightBarButtonItems:[NSArray arrayWithObjects: addButton, self.editButtonItem, nil]];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -45,6 +47,21 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)addPlayer
+{
+    [self performSegueWithIdentifier:@"addPlayerSegue" sender:self];
+}
+
+- (void)doneAddPlayer
+{
+    [self.players addObject:self.dummyPlayer];
+}
+
+- (void)cancelAddPlayer
+{
+    self.dummyPlayer = nil;
 }
 
 #pragma mark - Table view data source
@@ -80,7 +97,7 @@
         [self.players removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table viewdddd
     }   
 }
 
@@ -109,6 +126,12 @@
         UITableViewCell* cell = (UITableViewCell*)sender;
         dest.player = [self.players objectAtIndex:[self.tableView indexPathForSelectedRow].row];
         dest.navigationItem.title = cell.textLabel.text;
+    } else if ([segue.identifier isEqualToString:@"addPlayerSegue"]) {
+        RostersAddEditPlayerViewController* dest = [segue destinationViewController];
+        self.dummyPlayer = [[BaseballPlayer alloc] initWithFirstName:@"" lastName:@"" position:self.navigationItem.title];
+        dest.delegate = self;
+        dest.navigationItem.title = @"Add Player";
+        dest.player = self.dummyPlayer;
     }
 }
 

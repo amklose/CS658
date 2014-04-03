@@ -24,7 +24,7 @@
 		4BEAA81C18EB6FC4002C81DB /* RostersPlayersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAA81B18EB6FC4002C81DB /* RostersPlayersTableViewController.m */; };
 		4BEAA81F18EB7231002C81DB /* BaseballPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAA81E18EB7231002C81DB /* BaseballPlayer.m */; };
 		4BEAA82218EBA549002C81DB /* RostersPlayerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAA82118EBA549002C81DB /* RostersPlayerDetailViewController.m */; };
-		4BEAA82518EBCE91002C81DB /* RostersEditPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAA82418EBCE91002C81DB /* RostersEditPlayerViewController.m */; };
+		4BEAA82518EBCE91002C81DB /* RostersAddEditPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAA82418EBCE91002C81DB /* RostersAddEditPlayerViewController.m */; };
 		4BEAA82818ECFCD1002C81DB /* RostersPlayerWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAA82718ECFCD1002C81DB /* RostersPlayerWebViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -64,8 +64,8 @@
 		4BEAA81E18EB7231002C81DB /* BaseballPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballPlayer.m; sourceTree = "<group>"; };
 		4BEAA82018EBA549002C81DB /* RostersPlayerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RostersPlayerDetailViewController.h; sourceTree = "<group>"; };
 		4BEAA82118EBA549002C81DB /* RostersPlayerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RostersPlayerDetailViewController.m; sourceTree = "<group>"; };
-		4BEAA82318EBCE91002C81DB /* RostersEditPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RostersEditPlayerViewController.h; sourceTree = "<group>"; };
-		4BEAA82418EBCE91002C81DB /* RostersEditPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RostersEditPlayerViewController.m; sourceTree = "<group>"; };
+		4BEAA82318EBCE91002C81DB /* RostersAddEditPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RostersAddEditPlayerViewController.h; sourceTree = "<group>"; };
+		4BEAA82418EBCE91002C81DB /* RostersAddEditPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RostersAddEditPlayerViewController.m; sourceTree = "<group>"; };
 		4BEAA82618ECFCD1002C81DB /* RostersPlayerWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RostersPlayerWebViewController.h; sourceTree = "<group>"; };
 		4BEAA82718ECFCD1002C81DB /* RostersPlayerWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RostersPlayerWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,8 +176,8 @@
 				4BEAA81B18EB6FC4002C81DB /* RostersPlayersTableViewController.m */,
 				4BEAA82018EBA549002C81DB /* RostersPlayerDetailViewController.h */,
 				4BEAA82118EBA549002C81DB /* RostersPlayerDetailViewController.m */,
-				4BEAA82318EBCE91002C81DB /* RostersEditPlayerViewController.h */,
-				4BEAA82418EBCE91002C81DB /* RostersEditPlayerViewController.m */,
+				4BEAA82318EBCE91002C81DB /* RostersAddEditPlayerViewController.h */,
+				4BEAA82418EBCE91002C81DB /* RostersAddEditPlayerViewController.m */,
 				4BEAA82618ECFCD1002C81DB /* RostersPlayerWebViewController.h */,
 				4BEAA82718ECFCD1002C81DB /* RostersPlayerWebViewController.m */,
 			);
@@ -298,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BEAA82518EBCE91002C81DB /* RostersEditPlayerViewController.m in Sources */,
+				4BEAA82518EBCE91002C81DB /* RostersAddEditPlayerViewController.m in Sources */,
 				4BEAA81F18EB7231002C81DB /* BaseballPlayer.m in Sources */,
 				4BEAA82218EBA549002C81DB /* RostersPlayerDetailViewController.m in Sources */,
 				4BEAA7F018EB65F4002C81DB /* AppDelegate.m in Sources */,
@@ -510,6 +510,7 @@
 				4BEAA81018EB65F4002C81DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BEAA81118EB65F4002C81DB /* Build configuration list for PBXNativeTarget "Assignment 9Tests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +519,7 @@
 				4BEAA81318EB65F4002C81DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

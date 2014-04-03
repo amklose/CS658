@@ -245,15 +245,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="ENc-Ke-ez5"/>
+                    <connections>
+                        <segue destination="5aV-An-T7R" kind="push" identifier="addPlayerSegue" id="DGS-8d-Ws5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJe-gu-mjJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1166" y="-144"/>
         </scene>
-        <!--Rosters Edit Player View Controller - Edit Player-->
+        <!--Rosters Add Edit Player View Controller - Edit Player-->
         <scene sceneID="754-Ii-Z4h">
             <objects>
-                <viewController id="5aV-An-T7R" customClass="RostersEditPlayerViewController" sceneMemberID="viewController">
+                <viewController id="5aV-An-T7R" customClass="RostersAddEditPlayerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uxd-rD-tpO"/>
                         <viewControllerLayoutGuide type="bottom" id="JL6-iS-Hyn"/>
@@ -460,5 +463,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="y19-cf-o3H"/>
+        <segue reference="DGS-8d-Ws5"/>
     </inferredMetricsTieBreakers>
 </document>
