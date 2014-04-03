@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BEAA7E018EB65F4002C81DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEAA7DF18EB65F4002C81DB /* Foundation.framework */; };
+		4BEAA7E218EB65F4002C81DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEAA7E118EB65F4002C81DB /* CoreGraphics.framework */; };
+		4BEAA7E418EB65F4002C81DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEAA7E318EB65F4002C81DB /* UIKit.framework */; };
+		4BEAA7EA18EB65F4002C81DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BEAA7E818EB65F4002C81DB /* InfoPlist.strings */; };
+		4BEAA7EC18EB65F4002C81DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAA7EB18EB65F4002C81DB /* main.m */; };
+		4BEAA7F018EB65F4002C81DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAA7EF18EB65F4002C81DB /* AppDelegate.m */; };
+		4BEAA7F318EB65F4002C81DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BEAA7F118EB65F4002C81DB /* Main.storyboard */; };
+		4BEAA7F818EB65F4002C81DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BEAA7F718EB65F4002C81DB /* Images.xcassets */; };
+		4BEAA7FF18EB65F4002C81DB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEAA7FE18EB65F4002C81DB /* XCTest.framework */; };
+		4BEAA80018EB65F4002C81DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEAA7DF18EB65F4002C81DB /* Foundation.framework */; };
+		4BEAA80118EB65F4002C81DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEAA7E318EB65F4002C81DB /* UIKit.framework */; };
+		4BEAA80918EB65F4002C81DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BEAA80718EB65F4002C81DB /* InfoPlist.strings */; };
+		4BEAA80B18EB65F4002C81DB /* Assignment_9Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAA80A18EB65F4002C81DB /* Assignment_9Tests.m */; };
+		4BEAA81618EB66B9002C81DB /* RostersPositionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAA81518EB66B9002C81DB /* RostersPositionTableViewController.m */; };
+		4BEAA81C18EB6FC4002C81DB /* RostersPlayersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAA81B18EB6FC4002C81DB /* RostersPlayersTableViewController.m */; };
+		4BEAA81F18EB7231002C81DB /* BaseballPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAA81E18EB7231002C81DB /* BaseballPlayer.m */; };
+		4BEAA82218EBA549002C81DB /* RostersPlayerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAA82118EBA549002C81DB /* RostersPlayerDetailViewController.m */; };
+		4BEAA82518EBCE91002C81DB /* RostersEditPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAA82418EBCE91002C81DB /* RostersEditPlayerViewController.m */; };
+		4BEAA82818ECFCD1002C81DB /* RostersPlayerWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAA82718ECFCD1002C81DB /* RostersPlayerWebViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BEAA80218EB65F4002C81DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BEAA7D418EB65F4002C81DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BEAA7DB18EB65F4002C81DB;
+			remoteInfo = "Assignment 9";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4BEAA7DC18EB65F4002C81DB /* Assignment 9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment 9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BEAA7DF18EB65F4002C81DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4BEAA7E118EB65F4002C81DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4BEAA7E318EB65F4002C81DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4BEAA7E718EB65F4002C81DB /* Assignment 9-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment 9-Info.plist"; sourceTree = "<group>"; };
+		4BEAA7E918EB65F4002C81DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4BEAA7EB18EB65F4002C81DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4BEAA7ED18EB65F4002C81DB /* Assignment 9-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assignment 9-Prefix.pch"; sourceTree = "<group>"; };
+		4BEAA7EE18EB65F4002C81DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4BEAA7EF18EB65F4002C81DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4BEAA7F218EB65F4002C81DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BEAA7F718EB65F4002C81DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4BEAA7FD18EB65F4002C81DB /* Assignment 9Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment 9Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BEAA7FE18EB65F4002C81DB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4BEAA80618EB65F4002C81DB /* Assignment 9Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment 9Tests-Info.plist"; sourceTree = "<group>"; };
+		4BEAA80818EB65F4002C81DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4BEAA80A18EB65F4002C81DB /* Assignment_9Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment_9Tests.m; sourceTree = "<group>"; };
+		4BEAA81418EB66B9002C81DB /* RostersPositionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RostersPositionTableViewController.h; sourceTree = "<group>"; };
+		4BEAA81518EB66B9002C81DB /* RostersPositionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RostersPositionTableViewController.m; sourceTree = "<group>"; };
+		4BEAA81A18EB6FC4002C81DB /* RostersPlayersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RostersPlayersTableViewController.h; sourceTree = "<group>"; };
+		4BEAA81B18EB6FC4002C81DB /* RostersPlayersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RostersPlayersTableViewController.m; sourceTree = "<group>"; };
+		4BEAA81D18EB7231002C81DB /* BaseballPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseballPlayer.h; sourceTree = "<group>"; };
+		4BEAA81E18EB7231002C81DB /* BaseballPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballPlayer.m; sourceTree = "<group>"; };
+		4BEAA82018EBA549002C81DB /* RostersPlayerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RostersPlayerDetailViewController.h; sourceTree = "<group>"; };
+		4BEAA82118EBA549002C81DB /* RostersPlayerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RostersPlayerDetailViewController.m; sourceTree = "<group>"; };
+		4BEAA82318EBCE91002C81DB /* RostersEditPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RostersEditPlayerViewController.h; sourceTree = "<group>"; };
+		4BEAA82418EBCE91002C81DB /* RostersEditPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RostersEditPlayerViewController.m; sourceTree = "<group>"; };
+		4BEAA82618ECFCD1002C81DB /* RostersPlayerWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RostersPlayerWebViewController.h; sourceTree = "<group>"; };
+		4BEAA82718ECFCD1002C81DB /* RostersPlayerWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RostersPlayerWebViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BEAA7D918EB65F4002C81DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BEAA7E218EB65F4002C81DB /* CoreGraphics.framework in Frameworks */,
+				4BEAA7E418EB65F4002C81DB /* UIKit.framework in Frameworks */,
+				4BEAA7E018EB65F4002C81DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BEAA7FA18EB65F4002C81DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BEAA7FF18EB65F4002C81DB /* XCTest.framework in Frameworks */,
+				4BEAA80118EB65F4002C81DB /* UIKit.framework in Frameworks */,
+				4BEAA80018EB65F4002C81DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BEAA7D318EB65F4002C81DB = {
+			isa = PBXGroup;
+			children = (
+				4BEAA7E518EB65F4002C81DB /* Assignment 9 */,
+				4BEAA80418EB65F4002C81DB /* Assignment 9Tests */,
+				4BEAA7DE18EB65F4002C81DB /* Frameworks */,
+				4BEAA7DD18EB65F4002C81DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BEAA7DD18EB65F4002C81DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BEAA7DC18EB65F4002C81DB /* Assignment 9.app */,
+				4BEAA7FD18EB65F4002C81DB /* Assignment 9Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BEAA7DE18EB65F4002C81DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BEAA7DF18EB65F4002C81DB /* Foundation.framework */,
+				4BEAA7E118EB65F4002C81DB /* CoreGraphics.framework */,
+				4BEAA7E318EB65F4002C81DB /* UIKit.framework */,
+				4BEAA7FE18EB65F4002C81DB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BEAA7E518EB65F4002C81DB /* Assignment 9 */ = {
+			isa = PBXGroup;
+			children = (
+				4BEAA81918EB6F5F002C81DB /* View */,
+				4BEAA81818EB6F5A002C81DB /* Model */,
+				4BEAA81718EB6F3F002C81DB /* Controllers */,
+				4BEAA7F718EB65F4002C81DB /* Images.xcassets */,
+				4BEAA7E618EB65F4002C81DB /* Supporting Files */,
+			);
+			path = "Assignment 9";
+			sourceTree = "<group>";
+		};
+		4BEAA7E618EB65F4002C81DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BEAA7E718EB65F4002C81DB /* Assignment 9-Info.plist */,
+				4BEAA7E818EB65F4002C81DB /* InfoPlist.strings */,
+				4BEAA7EB18EB65F4002C81DB /* main.m */,
+				4BEAA7ED18EB65F4002C81DB /* Assignment 9-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BEAA80418EB65F4002C81DB /* Assignment 9Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4BEAA80A18EB65F4002C81DB /* Assignment_9Tests.m */,
+				4BEAA80518EB65F4002C81DB /* Supporting Files */,
+			);
+			path = "Assignment 9Tests";
+			sourceTree = "<group>";
+		};
+		4BEAA80518EB65F4002C81DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BEAA80618EB65F4002C81DB /* Assignment 9Tests-Info.plist */,
+				4BEAA80718EB65F4002C81DB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BEAA81718EB6F3F002C81DB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BEAA7EE18EB65F4002C81DB /* AppDelegate.h */,
+				4BEAA7EF18EB65F4002C81DB /* AppDelegate.m */,
+				4BEAA81418EB66B9002C81DB /* RostersPositionTableViewController.h */,
+				4BEAA81518EB66B9002C81DB /* RostersPositionTableViewController.m */,
+				4BEAA81A18EB6FC4002C81DB /* RostersPlayersTableViewController.h */,
+				4BEAA81B18EB6FC4002C81DB /* RostersPlayersTableViewController.m */,
+				4BEAA82018EBA549002C81DB /* RostersPlayerDetailViewController.h */,
+				4BEAA82118EBA549002C81DB /* RostersPlayerDetailViewController.m */,
+				4BEAA82318EBCE91002C81DB /* RostersEditPlayerViewController.h */,
+				4BEAA82418EBCE91002C81DB /* RostersEditPlayerViewController.m */,
+				4BEAA82618ECFCD1002C81DB /* RostersPlayerWebViewController.h */,
+				4BEAA82718ECFCD1002C81DB /* RostersPlayerWebViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4BEAA81818EB6F5A002C81DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4BEAA81D18EB7231002C81DB /* BaseballPlayer.h */,
+				4BEAA81E18EB7231002C81DB /* BaseballPlayer.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4BEAA81918EB6F5F002C81DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BEAA7F118EB65F4002C81DB /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BEAA7DB18EB65F4002C81DB /* Assignment 9 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BEAA80E18EB65F4002C81DB /* Build configuration list for PBXNativeTarget "Assignment 9" */;
+			buildPhases = (
+				4BEAA7D818EB65F4002C81DB /* Sources */,
+				4BEAA7D918EB65F4002C81DB /* Frameworks */,
+				4BEAA7DA18EB65F4002C81DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Assignment 9";
+			productName = "Assignment 9";
+			productReference = 4BEAA7DC18EB65F4002C81DB /* Assignment 9.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BEAA7FC18EB65F4002C81DB /* Assignment 9Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BEAA81118EB65F4002C81DB /* Build configuration list for PBXNativeTarget "Assignment 9Tests" */;
+			buildPhases = (
+				4BEAA7F918EB65F4002C81DB /* Sources */,
+				4BEAA7FA18EB65F4002C81DB /* Frameworks */,
+				4BEAA7FB18EB65F4002C81DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BEAA80318EB65F4002C81DB /* PBXTargetDependency */,
+			);
+			name = "Assignment 9Tests";
+			productName = "Assignment 9Tests";
+			productReference = 4BEAA7FD18EB65F4002C81DB /* Assignment 9Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BEAA7D418EB65F4002C81DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Tony Klose";
+				TargetAttributes = {
+					4BEAA7FC18EB65F4002C81DB = {
+						TestTargetID = 4BEAA7DB18EB65F4002C81DB;
+					};
+				};
+			};
+			buildConfigurationList = 4BEAA7D718EB65F4002C81DB /* Build configuration list for PBXProject "Assignment 9" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BEAA7D318EB65F4002C81DB;
+			productRefGroup = 4BEAA7DD18EB65F4002C81DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BEAA7DB18EB65F4002C81DB /* Assignment 9 */,
+				4BEAA7FC18EB65F4002C81DB /* Assignment 9Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BEAA7DA18EB65F4002C81DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BEAA7F818EB65F4002C81DB /* Images.xcassets in Resources */,
+				4BEAA7EA18EB65F4002C81DB /* InfoPlist.strings in Resources */,
+				4BEAA7F318EB65F4002C81DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BEAA7FB18EB65F4002C81DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BEAA80918EB65F4002C81DB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BEAA7D818EB65F4002C81DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BEAA82518EBCE91002C81DB /* RostersEditPlayerViewController.m in Sources */,
+				4BEAA81F18EB7231002C81DB /* BaseballPlayer.m in Sources */,
+				4BEAA82218EBA549002C81DB /* RostersPlayerDetailViewController.m in Sources */,
+				4BEAA7F018EB65F4002C81DB /* AppDelegate.m in Sources */,
+				4BEAA7EC18EB65F4002C81DB /* main.m in Sources */,
+				4BEAA81618EB66B9002C81DB /* RostersPositionTableViewController.m in Sources */,
+				4BEAA82818ECFCD1002C81DB /* RostersPlayerWebViewController.m in Sources */,
+				4BEAA81C18EB6FC4002C81DB /* RostersPlayersTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BEAA7F918EB65F4002C81DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BEAA80B18EB65F4002C81DB /* Assignment_9Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BEAA80318EB65F4002C81DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BEAA7DB18EB65F4002C81DB /* Assignment 9 */;
+			targetProxy = 4BEAA80218EB65F4002C81DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BEAA7E818EB65F4002C81DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BEAA7E918EB65F4002C81DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4BEAA7F118EB65F4002C81DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BEAA7F218EB65F4002C81DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4BEAA80718EB65F4002C81DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BEAA80818EB65F4002C81DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BEAA80C18EB65F4002C81DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4BEAA80D18EB65F4002C81DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BEAA80F18EB65F4002C81DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Assignment 9/Assignment 9-Prefix.pch";
+				INFOPLIST_FILE = "Assignment 9/Assignment 9-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4BEAA81018EB65F4002C81DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Assignment 9/Assignment 9-Prefix.pch";
+				INFOPLIST_FILE = "Assignment 9/Assignment 9-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4BEAA81218EB65F4002C81DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Assignment 9.app/Assignment 9";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Assignment 9/Assignment 9-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Assignment 9Tests/Assignment 9Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4BEAA81318EB65F4002C81DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Assignment 9.app/Assignment 9";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Assignment 9/Assignment 9-Prefix.pch";
+				INFOPLIST_FILE = "Assignment 9Tests/Assignment 9Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BEAA7D718EB65F4002C81DB /* Build configuration list for PBXProject "Assignment 9" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BEAA80C18EB65F4002C81DB /* Debug */,
+				4BEAA80D18EB65F4002C81DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BEAA80E18EB65F4002C81DB /* Build configuration list for PBXNativeTarget "Assignment 9" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BEAA80F18EB65F4002C81DB /* Debug */,
+				4BEAA81018EB65F4002C81DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4BEAA81118EB65F4002C81DB /* Build configuration list for PBXNativeTarget "Assignment 9Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BEAA81218EB65F4002C81DB /* Debug */,
+				4BEAA81318EB65F4002C81DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BEAA7D418EB65F4002C81DB /* Project object */;
+}
