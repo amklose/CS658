@@ -99,7 +99,7 @@
 
 -(void)viewWillDisappear:(BOOL)animated
 {
-    if(self.titleTextField.text ) {
+    if(titleTextField.text) {
         self.item.title = [NSMutableString stringWithString:self.titleTextField.text];
     }
     if(![self.textTextView.text isEqualToString:@"Notes"]) {
